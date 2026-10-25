@@ -4,7 +4,7 @@ dotenv.config()
 const app = express()
 const port = 5500
 app.get("/",(req,res)=>{
-    return res.status(200).json({message:"Old Server Is Running."})
+    return res.status(200).json({message:"New Server Is Running"})
 })
 app.get("/Health",(req,res)=>{
     return res.status(200).json({message:"The Node Server is Healthy."})
